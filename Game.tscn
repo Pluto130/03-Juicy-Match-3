@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Grid/grid.gd" type="Script" id=1]
 [ext_resource path="res://Pieces/Piece Background.tscn" type="PackedScene" id=2]
 [ext_resource path="res://UI/HUD.gd" type="Script" id=3]
 [ext_resource path="res://Assets/GuyongazeboRegular.otf" type="DynamicFontData" id=4]
 [ext_resource path="res://UI/Camera.gd" type="Script" id=5]
+[ext_resource path="res://Assets/Chiptronical.ogg" type="AudioStream" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 22
@@ -42,3 +43,7 @@ __meta__ = {
 anchor_mode = 0
 current = true
 script = ExtResource( 5 )
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+autoplay = true

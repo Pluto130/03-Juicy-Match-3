@@ -48,3 +48,4 @@ func die():
 	$Tween.start()
 	$Tween.interpolate_property(self, "rotation_degrees", rotation_degrees, rotate_amount, fall_duration-0.25, Tween.TRANS_QUINT, Tween.EASE_IN)
 	$Tween.start()
+	
