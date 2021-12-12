@@ -2,9 +2,7 @@
 Late project for Project 3, originally due 10/9/21 for MSCH-C220.
 
 ## Implementation
-Screen shake
-Particle effect
-Shaders implemented when blocks match
+Screen shake, Particle effect, Colored shaders implemented when blocks match,
 
 ## References
 Built using Godot 3.3.3
