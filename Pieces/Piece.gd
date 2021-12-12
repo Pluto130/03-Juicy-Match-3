@@ -33,7 +33,7 @@ func move_piece(change):
 
 func die():
 	dying = true
-	var target_color = $Sprite.modulate.darkened(0.75)
+	var target_color = $Sprite.modulate
 	target_color.s = 1
 	target_color.h = randf()
 	target_color.a = 0
