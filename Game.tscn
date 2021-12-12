@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Grid/grid.gd" type="Script" id=1]
 [ext_resource path="res://Pieces/Piece Background.tscn" type="PackedScene" id=2]
 [ext_resource path="res://UI/HUD.gd" type="Script" id=3]
 [ext_resource path="res://Assets/GuyongazeboRegular.otf" type="DynamicFontData" id=4]
+[ext_resource path="res://UI/Camera.gd" type="Script" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 22
@@ -13,11 +14,11 @@ font_data = ExtResource( 4 )
 
 [node name="grid" type="Node2D" parent="."]
 script = ExtResource( 1 )
-width = 4
-height = 5
-xStart = 96
+width = 7
+height = 10
+xStart = 80
 yStart = 832
-offset = 128
+offset = 70
 background = ExtResource( 2 )
 
 [node name="HUD" type="Control" parent="."]
@@ -36,3 +37,8 @@ text = "Score: "
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Camera" type="Camera2D" parent="."]
+anchor_mode = 0
+current = true
+script = ExtResource( 5 )
